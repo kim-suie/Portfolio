@@ -388,3 +388,156 @@ section {
     gap: 1rem;
     padding: 0 2rem 2rem;
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 8rem 5% 4rem;
+        min-height: auto;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 1.5rem 5%;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--second-bg-color);
+        display: none;
+        flex-direction: column;
+        padding: 2rem 0;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* HOME */
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .text-animate h3 {
+        font-size: 2.4rem;
+    }
+
+    .home-content p {
+        max-width: 100%;
+    }
+
+    .home-img img {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .home-sci {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    /* SKILLS */
+    .skills-icons {
+        gap: 2rem;
+    }
+
+    .skills-icons img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /* PROJECTS */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 35rem;
+    }
+
+    /* CONTACT */
+    .contact form {
+        padding: 2rem;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .text-animate h3 {
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .home-img img,
+    .about-img img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .project-card img {
+        height: 18rem;
+    }
+}
